@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.springframework.core.io.ClassPathResource;
 
+//This is a class containing helper functions
 public class Utils {
 
 	public static boolean isTimeBadgedAllowAccess(String dateTimeBadged, String fromTime, String toTime) {
@@ -32,6 +33,7 @@ public class Utils {
 
 	}
 
+	
 	public static File readJsonFile(String file) throws IOException {
 		File resource = null;
 		try {
@@ -41,7 +43,17 @@ public class Utils {
 		}
 		return resource;
 	}
-
+	
+	/**
+	 * this method returns a map of users and their corresponding encrypted passwords
+	 * Those users are the one stored in our database
+	 * They can be used to request a JWT token
+	 * user -> password
+	 * test1 -> passowrd1
+	 * test2 -> password2
+	 * test2 -> passowrd3
+	 * @return users
+	 */
 	public static Map<String, String> CreateHardCodedUsersForJWT() {
 		final Map<String, String> users = new HashMap<>();
 		users.put("test1", "$2a$10$DCk/VH3Klp6mkdxnFPrAqevUQ8zY7rykOfatplvTt9NNEbVCU7aVy");
