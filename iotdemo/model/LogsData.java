@@ -7,6 +7,7 @@ import lombok.*;
 
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode
 public class LogsData {
 
 	private UUID logId;
