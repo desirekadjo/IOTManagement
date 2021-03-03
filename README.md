@@ -14,13 +14,13 @@ After the validation and authentication has been completed, we are writting the 
 
 #### Endpoints
 
-we have 3 importants that helps us performing all our operations:
+* we have 3 importants that helps us performing all our operations:
 
-`/authenticate`
-This endpoint is called by a device to request a JWT token
+  * **POST** `/authenticate`
+  This endpoint is called by a device to request a JWT token
 
-`/access`
-This endpoint is called after a JWt obtained by the device in order to perfom the access checking operation.
+  * **POST** ` /access`
+  This endpoint is called after a JWt obtained by the device in order to perfom the access checking operation.
 
-`/heartbeat`
-This is a simple endpoint to ensure that the scanner is woking as expected.
+  *   **POST** ` /heartbeat`
+  This is a simple endpoint to ensure that the scanner is woking as expected.
