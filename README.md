@@ -1,4 +1,4 @@
-# IOTManagement
+# Api for IOT Management
 API interview project
 The IOT api is a public REST api used to authenticate the scanners attached doors in order to validate their . After the authentication complete the ai will apply some logic to determine if the access to a particular can be granted or not to a person.
 
