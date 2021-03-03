@@ -10,6 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@EqualsAndHashCode
 public class EventPayload {
 
 	@NotNull(message = "EmployeeId cannot be null")
